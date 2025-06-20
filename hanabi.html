@@ -6,33 +6,35 @@
             <link rel="stylesheet" type="text/css" href="hanabi.css">
         </head>
         <body>
-            <header id="cabecalho">
-                <span class="abas"> Início </span>
-                <span class="abas"> Cardápio </span>
-                <span class="abas"> Fidelidade </span>
-                <span class="abas"> Cadastro </span>
-                <img src="./icones/usuario.png" class="icones" id="usuario" alt="iconeUsuario">
-                <img src="./icones/carrinho.png" class="icones" id="carrinho" alt="iconeCarrinho">
-            </header>
+    <header id="cabecalho">
+        <span class="abas"> Início </span>
+        <span class="abas"> Cardápio </span>
+        <span class="abas"> Fidelidade </span>
+        <span class="abas"> Cadastro </span>
+        <img src="./icones/usuario.png" class="icones" id="usuario" alt="iconeUsuario">
+        <img src="./icones/carrinho.png" class="icones" id="carrinho" alt="iconeCarrinho">
+    </header>
 
-            <section id="divCarrossel">
-                <div id="faixaCarrossel">
-                    <img src="./icones/seta-esquerda.png" class="icones" id="setaEsquerda"> 
-                    <img src="./icones/seta-direita.png" class="icones" id="setaDireita"> 
-                    <img src="./images/sushi-1.png" class="imagensCarrossel">
-                    <img src="./images/sushi-2.png" class="imagensCarrossel" hidden>
-                    <img src="./images/sushi-3.png" class="imagensCarrossel" hidden>
-                    <img src="./images/sushi-4.png" class="imagensCarrossel" hidden>
-                    <img src="./images/sushi-5.png" class="imagensCarrossel" hidden>
-                    <div id="bolinhasContainer">
-                        <div class="bolinhasCarrossel"></div>
-                        <div class="bolinhasCarrossel"></div>
-                        <div class="bolinhasCarrossel"></div>
-                        <div class="bolinhasCarrossel"></div>
-                        <div class="bolinhasCarrossel"></div>
-                    </div>
-                </div>
-            </section>
+    <section id="divCarrossel">
+        <div id="faixaCarrossel">
+            <img src="./icones/seta-esquerda.png" class="icones" id="setaEsquerda" alt="Seta Esquerda">   
+            <img src="./icones/seta-direita.png" class="icones" id="setaDireita" alt="Seta Direita"> 
+
+            <img src="./images/sushi-1.png" class="imagensCarrossel ativa" alt="Sushi 1">
+            <img src="./images/sushi-2.png" class="imagensCarrossel" alt="Sushi 2">
+            <img src="./images/sushi-3.png" class="imagensCarrossel" alt="Sushi 3">
+            <img src="./images/sushi-4.png" class="imagensCarrossel" alt="Sushi 4">
+            <img src="./images/sushi-5.png" class="imagensCarrossel" alt="Sushi 5">
+            
+            <div id="bolinhasContainer">
+                <div class="bolinhasCarrossel ativa" onclick="irParaSlide(0)"></div>
+                <div class="bolinhasCarrossel" onclick="irParaSlide(1)"></div>
+                <div class="bolinhasCarrossel" onclick="irParaSlide(2)"></div>
+                <div class="bolinhasCarrossel" onclick="irParaSlide(3)"></div>
+                <div class="bolinhasCarrossel" onclick="irParaSlide(4)"></div>
+            </div>
+        </div>
+    </section>
 
             <script src="hanabi.js"></script>
         </body>
