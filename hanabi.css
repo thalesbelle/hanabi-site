@@ -1,18 +1,22 @@
- body{
-    margin: 0%;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding-top: 5vh;
+  box-sizing: border-box;
 }
 
-#cabecalho{
-    position: fixed;
-    width: 100%;
-    height: 5%;
-    background-color: rgb(170, 23, 23);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3%;
-    z-index: 1000;
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5vh; 
+  background-color: rgb(170, 23, 23);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
+  z-index: 1000;
+  border-bottom: 0.3vh solid rgb(134, 0, 0);
 }
 
 .icones{
@@ -70,17 +74,14 @@ span{
     transition: all 0.2s ease-in-out;
 }
 
-#divCarrossel{
-    position: absolute;
-    top: 5%;
-    width: 100%;
-    height: 50%;
-    background-color: gray;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    gap: 0.5%;
-    overflow: hidden;
+#divCarrossel {
+  width: 100%;
+  height: 50vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 #faixaCarrossel{
@@ -180,4 +181,59 @@ span{
 #bolinhasContainer {
         gap: 1vw;
 }
+}
+
+#segundoQuadrante{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menuUsuario{
+    position: absolute;
+    right: 3.5%;
+    top: 50%;
+    width: 7%;
+    height: auto;
+    background-color: #c53b3b70;
+    border-radius: 0.2vw;
+    border-top-right-radius: 0%;
+}
+
+.opcoesUsuario{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #1f1f1f;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; 
+    margin-left: 5%;
+}
+
+.opcoesUsuario:hover{
+    text-decoration: 2% underline solid ;
+    color: #d4d4d4;
+    transition: all 0.2s ease-in-out;
+}
+
+.tituloQuadrante{
+    position: absolute;
+    top: 0%;
+    left: 1%;
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    font-size: 3vw ;
+}
+
+.paragrafosQuadrante{
+    position: absolute;
+    top: 25%;
+    left: 1.3%;
+    font-family: 'Segoe UI';
+    font-weight: 500;
 }
